@@ -1,0 +1,38 @@
+@import 'vars';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+nav{
+    @include flexRow;
+    align-items: center;
+    height: 40px;
+    background-color: $blue;
+    color: $grey;
+    padding-left: 20px;
+    .logo{
+        @include flexRow;
+        align-items: center;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    ul{
+        @include flexRow;
+        align-items: center;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $grey;
+                margin: 20px;
+            }
+        }
+    }
+}

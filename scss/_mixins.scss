@@ -1,0 +1,17 @@
+@mixin beginOptions {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fonts;
+    color: $darkblues;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
