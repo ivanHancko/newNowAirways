@@ -40,7 +40,7 @@ header {
                 a{
                     text-decoration: none;
                     color: $grey;
-                    margin: 20px;
+                    margin: 0 10px;
                 }
             }
         }
@@ -55,12 +55,12 @@ main{
 
     .first{
         background-image: url(../images/greece.jpeg);
-        height: 70vh;
+        height: 1000px;
         background-size: cover;
         margin-bottom: 30px;
         form{
             background-color: $background;
-            height: 180px;
+            height: auto;
             margin: 0 auto;
             width: 90%;
             height: auto;
@@ -217,7 +217,7 @@ main{
             margin-bottom: 30px;
             height: 100vh;
             form{
-                width: 70%;
+                width: 80%;
                 .btn{
                     .lineTwo{
                         border-top: 3px solid $red;
@@ -228,13 +228,13 @@ main{
                     justify-content: space-evenly;
     
                     select, input {
-                        width: 280px;
+                        width: 250px;
                         height: 40px;
                         margin: 10px 0;
                     }
     
                     #search{
-                        width: 280px;
+                        width: 250px;
                         height: 40px;
                         margin: 10px 0;
                     }
@@ -258,21 +258,136 @@ main{
     
         .third{
             padding-bottom: 30px;
+            @include flexColumn;
             .heading{
                 @include flexRow;
                 @include heading;
                 border-top: none;
-                    h1{
-                    padding-bottom: 5px;
-                    }
+                h1{
+                padding-bottom: 5px;
+                }
             }
-            @include flexColumn;
-        
             .cards{
                 justify-content: space-evenly;
                 margin: 0 auto;
                 flex-wrap: wrap;
                 width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    header {
+
+        nav{
+            @include flexColumn;
+            align-items: start;
+            height: auto;
+            padding: 10px 20px;
+    
+            .logo{
+                @include flexRow;
+               ;
+    
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            ul {
+                display: none;
+            }
+        }
+        nav:hover ul{
+            @include flexColumn;
+            width: 100%;
+            li{
+                margin: 5px 0;
+            }
+            
+        }
+    }
+    
+    main{
+
+        //  <<<<<<<<<< FIRST SECTION >>>>>>>>>>
+    
+        .first{
+            height: 120vh;
+            form{
+            padding: 0px 0px 30px 0px;
+
+                .btn{
+                    width: 100%;
+                    padding: none !important;
+                    .lineOne{
+                        @include flexColumn;
+                        width: 100%;
+                        margin: 0;
+                        padding: none;
+                    }
+                    .lineTwo{
+                        border-top: 3px solid $red;
+                        justify-content: space-evenly;
+                        button{
+                            word-wrap: break-word;
+                            width: 100px;
+                            padding: 0px;
+               
+                        }
+                    }
+                }
+                .inputForm{
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+    
+                    select, input {
+                        width: 150px;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+    
+                    #search{
+                        width: 150px;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    
+        // //  <<<<<<<<<< SECOND SECTION >>>>>>>>>>
+    
+        .second{
+           
+            .images{
+                .img1 , .img2 , .img3 , .img4{
+                    width: 200px;
+                }
+            }   
+        }
+    
+        // //  <<<<<<<<<< THIRD SECTION >>>>>>>>>>
+    
+        .third{
+            padding-bottom: 30px;
+            @include flexColumn;
+    
+            .cards{
+                justify-content: space-evenly;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                width: 100%;
+                .card{
+                    width: 90%;
+                    p{
+                        margin: 5px 0px;
+                    }
+                    a{
+                        margin: 5px 0px;
+                    }
+                }
             }
         }
     }

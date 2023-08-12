@@ -35,18 +35,18 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #f6f6f6;
-  margin: 20px;
+  margin: 0 10px;
 }
 
 main .first {
   background-image: url(../images/greece.jpeg);
-  height: 70vh;
+  height: 1000px;
   background-size: cover;
   margin-bottom: 30px;
 }
 main .first form {
   background-color: #0F213F;
-  height: 180px;
+  height: auto;
   margin: 0 auto;
   width: 90%;
   height: auto;
@@ -262,7 +262,7 @@ main .third .cards .card .reservation:hover {
     height: 100vh;
   }
   main .first form {
-    width: 70%;
+    width: 80%;
   }
   main .first form .btn .lineTwo {
     border-top: 3px solid #c2002d;
@@ -272,12 +272,12 @@ main .third .cards .card .reservation:hover {
     justify-content: space-evenly;
   }
   main .first form .inputForm select, main .first form .inputForm input {
-    width: 280px;
+    width: 250px;
     height: 40px;
     margin: 10px 0;
   }
   main .first form .inputForm #search {
-    width: 280px;
+    width: 250px;
     height: 40px;
     margin: 10px 0;
   }
@@ -312,6 +312,97 @@ main .third .cards .card .reservation:hover {
     margin: 0 auto;
     flex-wrap: wrap;
     width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    padding: 10px 20px;
+  }
+  header nav .logo {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav:hover ul li {
+    margin: 5px 0;
+  }
+  main .first {
+    height: 120vh;
+  }
+  main .first form {
+    padding: 0px 0px 30px 0px;
+  }
+  main .first form .btn {
+    width: 100%;
+    padding: none !important;
+  }
+  main .first form .btn .lineOne {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: none;
+  }
+  main .first form .btn .lineTwo {
+    border-top: 3px solid #c2002d;
+    justify-content: space-evenly;
+  }
+  main .first form .btn .lineTwo button {
+    word-wrap: break-word;
+    width: 100px;
+    padding: 0px;
+  }
+  main .first form .inputForm {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  main .first form .inputForm select, main .first form .inputForm input {
+    width: 150px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  main .first form .inputForm #search {
+    width: 150px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  main .second .images .img1, main .second .images .img2, main .second .images .img3, main .second .images .img4 {
+    width: 200px;
+  }
+  main .third {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .third .cards {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  main .third .cards .card {
+    width: 90%;
+  }
+  main .third .cards .card p {
+    margin: 5px 0px;
+  }
+  main .third .cards .card a {
+    margin: 5px 0px;
   }
 }
 
