@@ -4,33 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title> New Now Airways </title>
 </head>
 <body>
+
+    <!-- <<<<<<<<<< HEADER NAVBAR >>>>>>>>>> -->
+    
     <header>
         <nav>
             <div class="logo">
                 <img src="images/logo.jpg" alt="logo">
-                <h3>New Now Airways</h3>
+                <h3> New Now Airways </h3>
             </div>
             <ul>
-                <li>
-                    <a href="#">Specijalne ponude</a>
-                </li>
-                <li>
-                    <a href="#">Destinacije</a>
-                </li>
-                <li>
-                    <a href="#">Informacije</a>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                </li>
-                <li>
-                    <a href="#">Prijavite se</a>
-                </li>
+                <li> <a href="#"> Specijalne ponude </a> </li>
+                <li> <a href="#"> Destinacije </a> </li>
+                <li> <a href="#"> Informacije </a> </li>
+                <li> <a href="#"> Kontakt </a> </li>
+                <li> <a href="#"> Prijavite se </a> </li>
             </ul>
         </nav>
     </header>
+
+    <!-- <<<<<<<<<< MAIN >>>>>>>>>> -->
+
+    <main>
+
+   <!-- <<<<<<<<<< FIRST SECTION >>>>>>>>>> -->
+
+        <section class="first">
+            <form>
+                <div class="btn">
+                    <div class="lineOne">
+                        <button class="active"> REZERVIŠI LET </button>
+                        <button> ONLINE CHECK IN </button>
+                        <button> MOJA REZERVACIJA </button>
+                        <button> INFORMACIJE O LETU </button>
+                    </div>
+                    <div class="lineTwo">
+                        <button class="active"> POVRATNO PUTOVANJE </button>
+                        <button> JEDAN SMER </button>
+                        <button> VIŠE DESTINACIJA </button>
+                    </div>
+                </div>
+                <div class="inputForm">
+                    <select name="from" id="from">
+                        <option value="Od"> Od </option>
+                        <option value="Beograd"> Beograd </option>
+                        <option value="Barselona"> Barselona </option>
+                        <option value="Istanbul"> Istanbul </option>
+                        <option value="Rim"> Rim </option>
+                        <option value="Pariz"> Pariz </option>
+                    </select>
+                    <select name="to" id="to">
+                        <option value="Do">Do</option>
+                        <option value="Beograd"> Beograd </option>
+                        <option value="Barselona"> Barselona </option>
+                        <option value="Istanbul"> Istanbul </option>
+                        <option value="Rim"> Rim </option>
+                        <option value="Pariz"> Pariz </option>
+                    </select>
+                    <input type="date" name="firstDay" id="firstDay">
+                    <input type="date" name="lastDay" id="lastDay">
+                    <input type="number" name="passenger" id="passenger" placeholder="Broj putnika:">
+                    <button id="search"> Pretraži </button>
+                </div>
+                
+            </form>
+        </section>
+
+    </main>
 </body>
 </html>

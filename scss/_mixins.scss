@@ -1,10 +1,4 @@
-@mixin beginOptions {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $fonts;
-    color: $darkblues;
-}
+
 
 @mixin flexRow {
     display: flex;
@@ -14,4 +8,31 @@
 @mixin flexColumn {
     display: flex;
     flex-direction: column;
+}
+@mixin imageHover {
+    opacity: 0.5;
+    transition: 2s;
+    color: black;
+}
+
+@mixin imageMedium {
+    width: 300px;
+    height: 300px;
+}
+
+@mixin imageOptions{
+    width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            margin: 10px 20px;
+            transition: 2s;
 }

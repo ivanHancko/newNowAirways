@@ -6,7 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-nav {
+header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,27 +15,71 @@ nav {
   color: #f6f6f6;
   padding-left: 20px;
 }
-nav .logo {
+header nav .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-nav .logo img {
+header nav .logo img {
   width: 20px;
   height: 20px;
 }
-nav ul {
+header nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-nav ul li {
+header nav ul li {
   list-style: none;
 }
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #f6f6f6;
   margin: 20px;
+}
+
+main .first {
+  background-image: url(../images/greece.jpeg);
+  height: 70vh;
+  background-size: cover;
+}
+main .first form {
+  background-color: #0F213F;
+  height: 180px;
+  margin: 0 auto;
+  width: 70%;
+}
+main .first form .btn .lineOne button, main .first form .btn .lineTwo button {
+  background-color: #0F213F;
+  color: #f6f6f6;
+  padding: 10px 50px;
+  border: none;
+  margin-bottom: 10px;
+}
+main .first form .btn .lineOne .active, main .first form .btn .lineTwo .active {
+  background-color: #3B486A;
+}
+main .first form .inputForm {
+  margin: 10px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .first form .inputForm select, main .first form .inputForm input {
+  width: 130px;
+  height: 40px;
+  background-color: #3B486A;
+  color: #f6f6f6;
+  border: none;
+  padding: 0 5px;
+}
+main .first form .inputForm #search {
+  background-color: #c2002d;
+  width: 130px;
+  height: 40px;
+  color: #f6f6f6;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

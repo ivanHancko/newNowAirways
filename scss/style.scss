@@ -8,30 +8,103 @@
     font-family: $font;
 }
 
-nav{
-    @include flexRow;
-    align-items: center;
-    height: 40px;
-    background-color: $blue;
-    color: $grey;
-    padding-left: 20px;
-    .logo{
+// <<<<<<<<<< HEADER NAVBAR >>>>>>>>>>
+
+header {
+
+    nav{
         @include flexRow;
         align-items: center;
-        img{
-            width: 20px;
-            height: 20px;
+        height: 40px;
+        background-color: $blue;
+        color: $grey;
+        padding-left: 20px;
+
+        .logo{
+            @include flexRow;
+            align-items: center;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        ul{
+            @include flexRow;
+            align-items: center;
+
+            li{
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    color: $grey;
+                    margin: 20px;
+                }
+            }
         }
     }
-    ul{
-        @include flexRow;
-        align-items: center;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color: $grey;
-                margin: 20px;
+}
+
+// <<<<<<<<<< MAIN >>>>>>>>>>
+
+main{
+
+    //  <<<<<<<<<< FIRST SECTION >>>>>>>>>>
+
+
+    .first{
+        background-image: url(../images/greece.jpeg);
+        height: 70vh;
+        background-size: cover;
+
+        form{
+            background-color: $background;
+            height: 180px;
+            margin: 0 auto;
+            width: 70%;
+
+            .btn{
+
+                .lineOne, .lineTwo{
+
+                    button{
+                        background-color: $background;
+                        color: $grey;
+                        padding: 10px 50px;
+                        border: none;
+                        margin-bottom: 10px;
+                    }
+
+                    .active{
+                        background-color: $button;
+                    }
+                }
+            }
+
+            .inputForm{
+                margin: 10px auto;
+                width: 90%;
+                @include flexRow;
+                justify-content: space-between;
+
+                select, input {
+                    width: 130px;
+                    height: 40px;
+                    background-color: $button;
+                    color: $grey;
+                    border: none;
+                    padding: 0 5px;
+                }
+
+                #search{
+                    background-color: $red;
+                    width: 130px;
+                    height: 40px;
+                    color: $grey;
+                    border: none;
+                }
             }
         }
     }
