@@ -48,7 +48,14 @@ main .first form {
   background-color: #0F213F;
   height: 180px;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+}
+main .first form .btn .lineOne, main .first form .btn .lineTwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 main .first form .btn .lineOne button, main .first form .btn .lineTwo button {
   background-color: #0F213F;
@@ -247,6 +254,65 @@ main .third .cards .card .reservation {
 main .third .cards .card .reservation:hover {
   transition: 1s;
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 1024px) {
+  main .first {
+    margin-bottom: 30px;
+    height: 100vh;
+  }
+  main .first form {
+    width: 70%;
+  }
+  main .first form .btn .lineTwo {
+    border-top: 3px solid #c2002d;
+  }
+  main .first form .inputForm {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  main .first form .inputForm select, main .first form .inputForm input {
+    width: 280px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  main .first form .inputForm #search {
+    width: 280px;
+    height: 40px;
+    margin: 10px 0;
+  }
+  main .second .images {
+    flex-wrap: wrap;
+  }
+  main .second .images .img1, main .second .images .img2, main .second .images .img3, main .second .images .img4 {
+    width: 400px;
+  }
+  main .third {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .third .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 30px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    box-shadow: 0px 2px 2px #386ab1;
+    border-top: none;
+  }
+  main .third .heading h1 {
+    padding-bottom: 5px;
+  }
+  main .third .cards {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

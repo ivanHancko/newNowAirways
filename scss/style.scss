@@ -62,12 +62,14 @@ main{
             background-color: $background;
             height: 180px;
             margin: 0 auto;
-            width: 70%;
-
+            width: 90%;
+            height: auto;
+            padding: 10px;
             .btn{
 
                 .lineOne, .lineTwo{
-
+                    @include flexRow;
+                    flex-wrap: wrap;
                     button{
                         background-color: $background;
                         color: $grey;
@@ -201,6 +203,76 @@ main{
                     transition: 1s;
                     transform: scale(1.5);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    main{
+
+        //  <<<<<<<<<< FIRST SECTION >>>>>>>>>>
+    
+        .first{
+            margin-bottom: 30px;
+            height: 100vh;
+            form{
+                width: 70%;
+                .btn{
+                    .lineTwo{
+                        border-top: 3px solid $red;
+                    }
+                }
+                .inputForm{
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+    
+                    select, input {
+                        width: 280px;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+    
+                    #search{
+                        width: 280px;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    
+        //  <<<<<<<<<< SECOND SECTION >>>>>>>>>>
+    
+        .second{
+           
+            .images{
+               flex-wrap: wrap;
+                .img1 , .img2 , .img3 , .img4{
+                    width: 400px;
+                }
+            }   
+        }
+    
+        //  <<<<<<<<<< THIRD SECTION >>>>>>>>>>
+    
+        .third{
+            padding-bottom: 30px;
+            .heading{
+                @include flexRow;
+                @include heading;
+                border-top: none;
+                    h1{
+                    padding-bottom: 5px;
+                    }
+            }
+            @include flexColumn;
+        
+            .cards{
+                justify-content: space-evenly;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                width: 90%;
             }
         }
     }
