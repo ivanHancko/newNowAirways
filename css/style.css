@@ -42,6 +42,7 @@ main .first {
   background-image: url(../images/greece.jpeg);
   height: 70vh;
   background-size: cover;
+  margin-bottom: 30px;
 }
 main .first form {
   background-color: #0F213F;
@@ -86,11 +87,11 @@ main .second .heading {
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  height: 60px;
+  height: 30px;
   text-align: center;
   border-radius: 0 0 20px 20px;
   border: none;
-  box-shadow: 0px 2px 10px #386ab1;
+  box-shadow: 0px 2px 2px #386ab1;
 }
 main .second .heading h1 {
   padding-bottom: 5px;
@@ -98,7 +99,7 @@ main .second .heading h1 {
 main .second .images {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 20px auto;
   justify-content: space-evenly;
 }
 main .second .images .img1 {
@@ -188,6 +189,64 @@ main .second .images .img4:hover {
   opacity: 0.5;
   transition: 2s;
   color: black;
+}
+main .third {
+  background-color: #f6f6f6;
+}
+main .third .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  height: 30px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  box-shadow: 0px 2px 2px #386ab1;
+  border-top: none;
+}
+main .third .heading h1 {
+  padding-bottom: 5px;
+}
+main .third .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+main .third .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  width: 250px;
+}
+main .third .cards .card h3 {
+  color: #386ab1;
+}
+main .third .cards .card img {
+  width: 30%;
+  background: aliceblue;
+  border-radius: 50%;
+}
+main .third .cards .card .blue {
+  color: #386ab1;
+}
+main .third .cards .card a {
+  text-decoration: none;
+  color: #386ab1;
+}
+main .third .cards .card .reservation {
+  background-color: #386ab1;
+  color: #f6f6f6;
+  padding: 10px 30px;
+  border: none;
+}
+main .third .cards .card .reservation:hover {
+  transition: 1s;
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=style.css.map */

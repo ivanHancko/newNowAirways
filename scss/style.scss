@@ -57,7 +57,7 @@ main{
         background-image: url(../images/greece.jpeg);
         height: 70vh;
         background-size: cover;
-
+        margin-bottom: 30px;
         form{
             background-color: $background;
             height: 180px;
@@ -120,7 +120,7 @@ main{
         }
         .images{
            @include flexRow;
-           margin: 0 auto;
+           margin: 20px auto;
            justify-content: space-evenly;
             .img1{
                 background-image: url(../images/barselona.jpeg);
@@ -151,5 +151,57 @@ main{
                 @include imageHover;
             }
         }   
+    }
+
+    //  <<<<<<<<<< THIRD SECTION >>>>>>>>>>
+
+    .third{
+        background-color: $grey;
+        .heading{
+            @include flexRow;
+            @include heading;
+            border-top: none;
+                h1{
+                padding-bottom: 5px;
+                }
+        }
+        .cards{
+            @include flexRow;
+            justify-content: space-around;
+            margin: 30px 0 ;
+            .card {
+                @include flexColumn;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                margin-top: 50px;
+                width: 250px;
+                h3{
+                    color: $blue;
+                }
+                img{
+                    width: 30%;
+                    background: aliceblue;
+                    border-radius: 50%;
+                }
+                .blue{
+                    color: $blue;
+                }
+                a{
+                    text-decoration: none;
+                    color: $blue;
+                }
+                .reservation{
+                    background-color: $blue;
+                    color: $grey;
+                    padding: 10px 30px;
+                    border: none;
+                }
+                .reservation:hover{
+                    transition: 1s;
+                    transform: scale(1.5);
+                }
+            }
+        }
     }
 }
