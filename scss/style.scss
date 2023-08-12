@@ -53,7 +53,6 @@ main{
 
     //  <<<<<<<<<< FIRST SECTION >>>>>>>>>>
 
-
     .first{
         background-image: url(../images/greece.jpeg);
         height: 70vh;
@@ -107,5 +106,50 @@ main{
                 }
             }
         }
+    }
+
+    //  <<<<<<<<<< SECOND SECTION >>>>>>>>>>
+
+    .second{
+        .heading{
+            @include flexRow;
+            @include heading;
+                h1{
+                padding-bottom: 5px;
+                }
+        }
+        .images{
+           @include flexRow;
+           margin: 0 auto;
+           justify-content: space-evenly;
+            .img1{
+                background-image: url(../images/barselona.jpeg);
+                @include imageOptions;
+            }
+            .img2{
+                background-image: url(../images/istanbul.jpeg);
+                @include imageOptions;
+            }
+            .img3{
+                background-image: url(../images/rim.jpeg);
+                @include imageOptions;
+            }
+            .img4{
+                background-image: url(../images/pariz.webp);
+                @include imageOptions;
+            }
+            .img1:hover{
+                @include imageHover;
+            }
+            .img2:hover{
+                @include imageHover;
+            }
+            .img3:hover{
+                @include imageHover;
+            }
+            .img4:hover{
+                @include imageHover;
+            }
+        }   
     }
 }
